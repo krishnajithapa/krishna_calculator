@@ -3,31 +3,31 @@ library calculator;
 /// A Calculator.
 class CalculatorClass {
   CalculatorClass();
-  calculate(int firstNum, int secondNum, String sign) {
+  double calculate(int firstNum, int secondNum, String sign) {
     switch (sign) {
       case "+":
         {
-          return firstNum + secondNum;
+          return (firstNum + secondNum).toDouble();
         }
 
       case "-":
         {
-          return firstNum - secondNum;
+          return (firstNum - secondNum).toDouble();
         }
 
       case "*":
         {
-          return firstNum * secondNum;
+          return (firstNum * secondNum).toDouble();
         }
 
       case "/":
         {
-          return firstNum / secondNum;
+          return (firstNum / secondNum).toDouble();
         }
 
       default:
         {
-          return "invalid operation";
+          return 0;
         }
     }
   }
