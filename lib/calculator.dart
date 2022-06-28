@@ -3,31 +3,31 @@ library calculator;
 /// A Calculator.
 class CalculatorClass {
   CalculatorClass();
-  double calculate(int firstNum, int secondNum, String sign) {
+  calculate(int firstNum, int secondNum, String sign) async {
     switch (sign) {
       case "+":
         {
-          return (firstNum + secondNum).toDouble();
+          return await (firstNum + secondNum);
         }
 
       case "-":
         {
-          return (firstNum - secondNum).toDouble();
+          return await (firstNum - secondNum);
         }
 
       case "*":
         {
-          return (firstNum * secondNum).toDouble();
+          return await (firstNum * secondNum);
         }
 
       case "/":
         {
-          return (firstNum / secondNum).toDouble();
+          return await (firstNum / secondNum);
         }
 
       default:
         {
-          return 0;
+          return "invalid operation";
         }
     }
   }
