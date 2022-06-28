@@ -2,6 +2,7 @@ library calculator;
 
 /// A Calculator.
 class Calculator {
+  Calculator();
   calculate(int firstNum, int secondNum, String sign) {
     switch (sign) {
       case "+":
