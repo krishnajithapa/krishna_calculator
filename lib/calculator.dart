@@ -1,8 +1,8 @@
 library calculator;
 
 /// A Calculator.
-class Calculator {
-  Calculator();
+class CalculatorClass {
+  CalculatorClass();
   calculate(int firstNum, int secondNum, String sign) {
     switch (sign) {
       case "+":
